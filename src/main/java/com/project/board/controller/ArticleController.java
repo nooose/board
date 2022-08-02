@@ -26,6 +26,7 @@ public class ArticleController {
 
     private final ArticleService articleService;
     private final PaginationService paginationService;
+
     @GetMapping
     public String articles(
             @RequestParam(required = false) SearchType searchType,
