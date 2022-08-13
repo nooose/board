@@ -65,6 +65,7 @@ public class ArticleService {
             UserAccount userAccount = userAccountRepository.getReferenceById(dto.userAccountDto().userId());
 
             if (article.getUserAccount().equals(userAccount)) {
+                log.info("게시글 수정 인증");
                 if (dto.title() != null) { article.setTitle(dto.title()); }
                 if (dto.content() != null) { article.setContent(dto.content()); }
                 article.setHashtag(dto.hashtag());
