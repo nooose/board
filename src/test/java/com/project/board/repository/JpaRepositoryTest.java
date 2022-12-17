@@ -147,7 +147,7 @@ class JpaRepositoryTest {
         long previousArticleCommentCount = articleCommentRepository.count();
 
         // When
-        articleCommentRepository.deleteByIdAndUserAccount_UserId(1L, "noose");
+        articleCommentRepository.deleteByIdAndUserAccount_UserId(1L, "nooose");
 
         // Then
         assertThat(articleCommentRepository.count()).isEqualTo(previousArticleCommentCount - 5); // 테스트 댓글 + 대댓글 4개
