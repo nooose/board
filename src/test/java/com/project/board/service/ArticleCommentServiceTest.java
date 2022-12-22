@@ -97,6 +97,7 @@ class ArticleCommentServiceTest {
                 id,
                 1L,
                 createUserAccountDto(),
+                null,
                 content,
                 LocalDateTime.now(),
                 "noose",
